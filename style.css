@@ -1,0 +1,30 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+#calcCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calcBody{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 40vw;
+    border: solid white 1px;
+    padding: 10px;
+}
+
+#calcDisplay{
+    border: solid blue 1px;
+    flex-grow: 1;
+}
+
+#calcButtons{
+    border: solid green 1px;
+    flex-grow: 4;
+}
