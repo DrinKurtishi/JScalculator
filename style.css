@@ -1,6 +1,7 @@
 html{
     background-color: black;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #calcCenter{
@@ -20,25 +21,28 @@ html{
     border: solid white 1px;
 
     padding: 5%;
+
+    user-select: none;
 }
 
 #calcDisplay{
     border: solid blue 1px;
     height: 25%;
+    padding: 0% 3% 0% 3%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
 #displayNumbers{
-    font-size: 6vw;
+    font-size: 5.5vw;
     margin: 0;
     padding: 0;
 }
 
 #calcButtons{
     border: solid green 1px;
-    flex-grow: 3;
+    height: 30vw;
 
     display: flex;
     padding: 5px;
@@ -63,7 +67,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 3.5%;
     
 }
 
@@ -79,7 +83,7 @@ html{
 
 .numberButtons{
     width: 27%;
-    height: 23%;
+    height: 20%;
 }
 
 .operationButtons{
@@ -87,10 +91,6 @@ html{
     height: 15%;;
 }
 
-#zero{
-    width: 94%;
-    height: 13%;
-}
 
 .Buttons:hover{
     background-color: rgba(128, 128, 128, .2)
