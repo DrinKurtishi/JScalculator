@@ -24,7 +24,16 @@ html{
 
 #calcDisplay{
     border: solid blue 1px;
-    flex-grow: 1;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayNumbers{
+    font-size: 6vw;
+    margin: 0;
+    padding: 0;
 }
 
 #calcButtons{
@@ -38,7 +47,7 @@ html{
 
 #calcNumbers{
     border: solid red 1px;
-    flex-grow: 3;
+    width: 20vw;
     padding: 3%;
 
     display: flex;
@@ -49,8 +58,7 @@ html{
 
 #calcOperations{
     border: solid orangered 1px;
-    flex-grow: 1;
-
+    width: 7vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,11 +68,13 @@ html{
 }
 
 .Buttons{
-    border: solid salmon 1px;
+    border: outset salmon 3px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 4vw;
 }
 
 .numberButtons{
@@ -74,10 +84,20 @@ html{
 
 .operationButtons{
     width: 70%;
-    height: 15%;
+    height: 15%;;
 }
 
 #zero{
-    width: 92%;
-    height: 15%;
+    width: 94%;
+    height: 13%;
 }
+
+.Buttons:hover{
+    background-color: rgba(128, 128, 128, .2)
+}
+
+.Buttons:active{
+    background-color: black;
+    border-style: inset;
+}
+
